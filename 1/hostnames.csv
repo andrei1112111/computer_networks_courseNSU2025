@@ -1,0 +1,11 @@
+hostname,ping_status
+google.com,ok
+www.youtube.com,ok
+https://translate.yandex.ru,ok
+classroom.google.com,ok
+mail.google.com,ok
+vk.com,ok
+chatgpt.com,ok
+best_none_exist_addres.com,err
+docs.google.com,ok
+docs.gogle.com,err
