@@ -1,0 +1,5 @@
+ssh-keygen -t rsa -b 4096
+
+ssh-copy-id a.tishkin1@84.237.51.129
+
+ssh a.tishkin1@84.237.51.129

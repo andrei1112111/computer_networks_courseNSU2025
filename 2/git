@@ -1,0 +1,7 @@
+ssh-keygen -t rsa -b 4096
+
+cat ~/.ssh/id_rsa.pub
+GitHub repo: Settings -> SSH and GPG keys
+
+git remote set-url origin git@github.com:andrei1112111/computer_networks_courseNSU2025.git
+git push origin main
