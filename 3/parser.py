@@ -1,10 +1,9 @@
+import csv
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
-
-import csv
-
 
 browser = webdriver.Safari()
 wait = WebDriverWait(browser, 10)
@@ -15,7 +14,6 @@ questions_per_page = 2
 parsed_questions = [
     ("page_number", "question_number", "title_tag", "question_link", "votes", "answers", "views", "text")  # head
 ]
-
 
 browser.get("https://stackoverflow.com/questions")
 
@@ -45,8 +43,8 @@ for page in range(1, num_pages + 1):
         browser.execute_script("arguments[0].click();", next_button)
     except Exception as e:
         print(e.__class__.__name__)
+        browser.quit()
         break
-
 
 browser.quit()
 
